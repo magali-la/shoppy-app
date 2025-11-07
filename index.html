@@ -4,14 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoppy App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
 </head>
 <body>
-    <h1>Feeling Shoppy? Modify your cart!</h1>
-    <input type="text" id="itemInput" placeholder="Enter an Item">
-    <button id="addItemButton">Add Item</button>
-    <button id="removeItemButton">Remove Last Item</button>
-    <ul id="cart"></ul>
+    <header>
+        <h1>Feeling Shoppy? Modify your cart!</h1>
+    </header>
+    <main>
+        <section aria-label="shop for items">
+            <h2>Check out our Best-Selling Products</h2>
+            <hr>
+            <section aria-label="shop featured products">
+            </section>
+            <button id="addItemButton" class="btn fs-5"><i class="bi bi-cart-plus fs-4"></i>
+            Add Item</button>
+            <hr>
+        </section>
+        <!-- cart section -->
+        <section aria-label="your cart">
+            <h2>Your Cart <i></i></h2>
+            <hr>
+            <button id="removeItemButton" class="btn fs-5"><i class="bi bi-cart-dash fs-4"></i>
+Remove Last Item</button>
+            <button id="clearCartButton" class="btn bg-secondary-subtle fs-5"><i class="bi bi-cart-x fs-4"></i>
+Clear Cart</button>
+            <!-- cart items display -->
+            <ul id="cart"></ul>
+        </section>
+    </main>
 </body>
 </html>
