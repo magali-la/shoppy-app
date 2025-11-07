@@ -1,0 +1,30 @@
+:root {
+    
+}
+button {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+button:hover {
+    font-weight: 600;
+}
+
+#addItemButton {
+    background-color: lightgreen;
+}
+
+#removeItemButton {
+    background-color: lightcoral;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 50vw;
+    border-radius: 10px;
+    padding: 8px;
+}
